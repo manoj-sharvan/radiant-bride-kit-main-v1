@@ -10,7 +10,7 @@ export const Route = createFileRoute("/contact")({
     meta: buildMeta({
       title: "Contact Divya — Book Your Bridal Makeup in Tiruvannamalai",
       description:
-        "Book bridal makeup with Divya in Tiruvannamalai. WhatsApp 8838114951 or call 8667671121. Home service across Tamil Nadu.",
+        "Book bridal makeup with Divya in Tiruvannamalai. WhatsApp 8838114951 or call 8667671121.",
       path: "/contact",
     }),
     links: buildLinks("/contact"),

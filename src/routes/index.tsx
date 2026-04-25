@@ -4,7 +4,6 @@ import {
   Sparkles,
   Heart,
   Crown,
-  Home as HomeIcon,
   MessageCircle,
   Star,
   Instagram,
@@ -110,7 +109,7 @@ function Hero() {
             Premium Bridal Makeup Artist in Tiruvannamalai
           </h1>
           <p className="mt-5 text-base sm:text-xl font-serif-elegant text-ivory/85 italic max-w-xl">
-            HD Makeup · Saree Draping · Hairstyling · Home Service
+            HD Makeup · Saree Draping · Hairstyling
           </p>
 
           <div className="mt-8 flex flex-col sm:flex-row gap-3">
@@ -171,7 +170,6 @@ function WhyChoose() {
     { icon: Crown, title: "Expert Bridal Makeup", desc: "Years of experience crafting timeless South Indian bridal looks." },
     { icon: Sparkles, title: "HD & Airbrush", desc: "Camera-ready finish using professional HD and airbrush techniques." },
     { icon: Heart, title: "Complete Package", desc: "Makeup, hair, draping & mehendi — one artist, total peace of mind." },
-    { icon: HomeIcon, title: "Home Service", desc: "We come to your home or venue across Tamil Nadu." },
   ];
   return (
     <section aria-labelledby="why-title" className="py-20 sm:py-28">

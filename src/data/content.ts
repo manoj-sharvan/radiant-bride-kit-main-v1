@@ -41,12 +41,6 @@ export const services = [
     price: "₹2,000 – ₹3,500",
     icon: "🎨",
   },
-  {
-    title: "Home Service",
-    desc: "We travel to your venue across Tamil Nadu for total convenience.",
-    price: "Distance based",
-    icon: "🚗",
-  },
 ] as const;
 
 export const packages = [
@@ -130,7 +124,7 @@ export const testimonials = [
     name: "Lakshmi V.",
     role: "Bride 2023",
     rating: 5,
-    text: "Came home for the entire ceremony — so convenient. The HD makeup looked stunning in every photograph.",
+    text: "The HD makeup looked stunning in every photograph. Very professional and convenient.",
   },
   {
     name: "Meera N.",
@@ -150,10 +144,6 @@ export const faqs = [
   {
     q: "How far in advance should I book?",
     a: "We recommend booking 3–6 months in advance for peak wedding season (Nov–Feb). For other dates, 1–2 months is usually sufficient.",
-  },
-  {
-    q: "Do you offer home service in Tiruvannamalai?",
-    a: "Yes! We travel to your home or venue across Tiruvannamalai and most of Tamil Nadu. Travel charges are distance-based.",
   },
   {
     q: "What products do you use?",

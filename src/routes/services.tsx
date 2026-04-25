@@ -11,7 +11,7 @@ export const Route = createFileRoute("/services")({
     meta: buildMeta({
       title: "Bridal Makeup Services & Pricing | Divya Tiruvannamalai",
       description:
-        "HD bridal makeup, hairstyling, saree draping, mehendi & more. Transparent pricing. Premium products. Home service available.",
+        "HD bridal makeup, hairstyling, saree draping, mehendi & more. Transparent pricing. Premium products.",
       path: "/services",
     }),
     links: buildLinks("/services"),

@@ -17,7 +17,7 @@ export const Route = createFileRoute("/faq")({
     meta: buildMeta({
       title: "Bridal Makeup FAQ | Divya Tiruvannamalai",
       description:
-        "Answers to common questions about bridal makeup booking, trials, products, home service & pricing in Tiruvannamalai.",
+        "Answers to common questions about bridal makeup booking, trials, products, & pricing in Tiruvannamalai.",
       path: "/faq",
     }),
     links: buildLinks("/faq"),
