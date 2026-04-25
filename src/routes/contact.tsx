@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { MessageCircle, Phone, Instagram, MapPin, Clock, Mail } from "lucide-react";
+import { MessageCircle, Phone, Instagram, MapPin, Clock } from "lucide-react";
 import { SectionHeading } from "@/components/SectionHeading";
 import { Reveal } from "@/components/motion-helpers";
 import { SITE, whatsappLink, telLink } from "@/lib/site";
@@ -104,7 +104,7 @@ function Contact() {
           ))}
         </div>
 
-        <div className="mt-12 grid gap-6 md:grid-cols-3">
+        <div className="mt-12 grid gap-6 md:grid-cols-2">
           <Reveal delay={0.1}>
             <div className="rounded-2xl border border-border bg-card p-6 text-center h-full">
               <MapPin className="mx-auto h-6 w-6 text-gold" />
@@ -117,13 +117,6 @@ function Contact() {
               <Clock className="mx-auto h-6 w-6 text-gold" />
               <h4 className="mt-3 font-display text-lg text-burgundy">Availability</h4>
               <p className="mt-2 text-sm text-muted-foreground">Mon–Sun · 6 AM – 10 PM</p>
-            </div>
-          </Reveal>
-          <Reveal delay={0.2}>
-            <div className="rounded-2xl border border-border bg-card p-6 text-center h-full">
-              <Mail className="mx-auto h-6 w-6 text-gold" />
-              <h4 className="mt-3 font-display text-lg text-burgundy">Email</h4>
-              <p className="mt-2 text-sm text-muted-foreground">{SITE.email}</p>
             </div>
           </Reveal>
         </div>

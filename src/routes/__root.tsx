@@ -98,7 +98,6 @@ export const Route = createRootRoute({
           image: absoluteUrl("/og-image.jpg"),
           url: SITE.url,
           telephone: `+91${SITE.phonePrimary}`,
-          email: SITE.email,
           address: {
             "@type": "PostalAddress",
             addressLocality: "Tiruvannamalai",

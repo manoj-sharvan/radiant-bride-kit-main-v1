@@ -7,7 +7,6 @@ export const SITE = {
   whatsappNumber: "918838114951",
   instagram: "divya_bridalmakeupartist",
   instagramUrl: "https://instagram.com/divya_bridalmakeupartist",
-  email: "bookings@divyabridal.in",
   url: "https://divyabridal.in",
 } as const;
 
