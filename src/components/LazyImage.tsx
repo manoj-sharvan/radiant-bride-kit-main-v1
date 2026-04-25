@@ -51,7 +51,7 @@ export function LazyImage({
         className={cn(
           "h-full w-full object-cover transition-opacity duration-500",
           loaded ? "opacity-100" : "opacity-0",
-          className
+          className,
         )}
         {...rest}
       />

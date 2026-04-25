@@ -14,17 +14,15 @@ export const SITE = {
 const MAX_WA_MSG = 500;
 function sanitiseMessage(msg: string): string {
   return msg
+    // eslint-disable-next-line no-control-regex
     .replace(/[\u0000-\u001F\u007F]/g, "") // strip control chars
     .trim()
     .slice(0, MAX_WA_MSG);
 }
 
 export const whatsappLink = (
-  message = "Hello Divya! I'd like to book your bridal makeup services."
-) =>
-  `https://wa.me/${SITE.whatsappNumber}?text=${encodeURIComponent(
-    sanitiseMessage(message)
-  )}`;
+  message = "Hello Divya! I'd like to book your bridal makeup services.",
+) => `https://wa.me/${SITE.whatsappNumber}?text=${encodeURIComponent(sanitiseMessage(message))}`;
 
 export const telLink = (phone: string = SITE.phonePrimary) => `tel:+91${phone}`;
 

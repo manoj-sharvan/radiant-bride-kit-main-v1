@@ -37,7 +37,11 @@ export const Route = createFileRoute("/portfolio")({
 });
 
 const items = [
-  { src: g1, alt: "Traditional red bridal look with gold temple jewellery", aspect: "aspect-[3/4]" },
+  {
+    src: g1,
+    alt: "Traditional red bridal look with gold temple jewellery",
+    aspect: "aspect-[3/4]",
+  },
   { src: g2, alt: "HD glam bridal makeup close-up", aspect: "aspect-[4/5]" },
   { src: g3, alt: "Floral hairstyling with jasmine", aspect: "aspect-[3/5]" },
   { src: g4, alt: "Reception bride airbrush makeup", aspect: "aspect-[3/4]" },
@@ -91,7 +95,9 @@ function Portfolio() {
         <Reveal>
           <div className="mt-16 text-center">
             <a
-              href={whatsappLink("Hi Divya, I love your portfolio. I'd like to discuss my bridal look.")}
+              href={whatsappLink(
+                "Hi Divya, I love your portfolio. I'd like to discuss my bridal look.",
+              )}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex min-h-12 items-center gap-2 rounded-full gradient-cta px-7 py-4 text-base font-semibold text-primary-foreground shadow-luxe hover:scale-105 transition-transform"
@@ -108,7 +114,9 @@ function Portfolio() {
             images={items}
             index={active}
             onClose={() => setActive(null)}
-            onPrev={() => setActive((i) => (i === null ? 0 : (i - 1 + items.length) % items.length))}
+            onPrev={() =>
+              setActive((i) => (i === null ? 0 : (i - 1 + items.length) % items.length))
+            }
             onNext={() => setActive((i) => (i === null ? 0 : (i + 1) % items.length))}
           />
         </Suspense>

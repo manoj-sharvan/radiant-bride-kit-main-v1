@@ -66,7 +66,9 @@ function Reviews() {
                   </div>
                   <div>
                     <p className="font-display text-burgundy">{t.name}</p>
-                    <p className="text-xs uppercase tracking-[0.15em] text-muted-foreground">{t.role}</p>
+                    <p className="text-xs uppercase tracking-[0.15em] text-muted-foreground">
+                      {t.role}
+                    </p>
                   </div>
                 </div>
               </div>

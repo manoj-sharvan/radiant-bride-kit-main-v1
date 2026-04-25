@@ -51,22 +51,34 @@ function Packages() {
                   </div>
                 )}
 
-                <p className={`text-xs uppercase tracking-[0.25em] font-medium ${p.highlight ? "text-gold-light" : "text-gold"}`}>
+                <p
+                  className={`text-xs uppercase tracking-[0.25em] font-medium ${p.highlight ? "text-gold-light" : "text-gold"}`}
+                >
                   {p.tag}
                 </p>
-                <h3 className={`mt-3 font-display text-2xl ${p.highlight ? "text-ivory" : "text-burgundy"}`}>
+                <h3
+                  className={`mt-3 font-display text-2xl ${p.highlight ? "text-ivory" : "text-burgundy"}`}
+                >
                   {p.name}
                 </h3>
-                <p className={`mt-4 font-display text-4xl ${p.highlight ? "text-ivory" : "text-burgundy"}`}>
+                <p
+                  className={`mt-4 font-display text-4xl ${p.highlight ? "text-ivory" : "text-burgundy"}`}
+                >
                   {p.price}
                 </p>
-                <div className={`mt-5 h-px w-full ${p.highlight ? "bg-gold/30" : "gold-divider"}`} />
+                <div
+                  className={`mt-5 h-px w-full ${p.highlight ? "bg-gold/30" : "gold-divider"}`}
+                />
 
                 <ul className="mt-5 space-y-3 flex-1">
                   {p.features.map((f) => (
                     <li key={f} className="flex items-start gap-2 text-sm">
-                      <Check className={`h-4 w-4 shrink-0 mt-0.5 ${p.highlight ? "text-gold-light" : "text-gold"}`} />
-                      <span className={p.highlight ? "text-ivory/90" : "text-charcoal/80"}>{f}</span>
+                      <Check
+                        className={`h-4 w-4 shrink-0 mt-0.5 ${p.highlight ? "text-gold-light" : "text-gold"}`}
+                      />
+                      <span className={p.highlight ? "text-ivory/90" : "text-charcoal/80"}>
+                        {f}
+                      </span>
                     </li>
                   ))}
                 </ul>
@@ -92,7 +104,8 @@ function Packages() {
           <div className="mt-16 max-w-3xl mx-auto rounded-2xl border border-gold/30 bg-card p-8 text-center">
             <h3 className="font-display text-2xl text-burgundy">Need something custom?</h3>
             <p className="mt-3 text-sm text-muted-foreground font-serif-elegant text-lg">
-              We tailor packages for destination weddings, family bookings, and multi-day ceremonies.
+              We tailor packages for destination weddings, family bookings, and multi-day
+              ceremonies.
             </p>
             <a
               href={whatsappLink("Hi Divya, I'd like a custom bridal package quote.")}

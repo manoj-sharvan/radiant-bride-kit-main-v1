@@ -44,7 +44,9 @@ function Services() {
                 <h3 className="font-display text-2xl text-burgundy">{s.title}</h3>
                 <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
                 <div className="mt-5 pt-5 border-t border-border/60 flex items-center justify-between">
-                  <span className="font-serif-elegant text-lg text-burgundy font-medium">{s.price}</span>
+                  <span className="font-serif-elegant text-lg text-burgundy font-medium">
+                    {s.price}
+                  </span>
                   <a
                     href={whatsappLink(`Hi Divya, I'd like to book ${s.title}.`)}
                     target="_blank"

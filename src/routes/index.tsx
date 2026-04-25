@@ -65,10 +65,7 @@ function Home() {
 
 function Hero() {
   return (
-    <section
-      aria-labelledby="hero-title"
-      className="relative min-h-[100svh] overflow-hidden"
-    >
+    <section aria-labelledby="hero-title" className="relative min-h-[100svh] overflow-hidden">
       <div className="absolute inset-0">
         <img
           src={heroBride}
@@ -145,7 +142,10 @@ function TrustBar() {
     { num: 5, suffix: "★", label: "Avg. Rating" },
   ];
   return (
-    <section aria-label="Key statistics" className="bg-ivory py-14 sm:py-20 border-y border-gold/20">
+    <section
+      aria-label="Key statistics"
+      className="bg-ivory py-14 sm:py-20 border-y border-gold/20"
+    >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <dl className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           {stats.map((s, i) => (
@@ -154,7 +154,10 @@ function TrustBar() {
               <dd className="font-display text-4xl sm:text-5xl text-burgundy">
                 <CountUp end={s.num} suffix={s.suffix} />
               </dd>
-              <p aria-hidden="true" className="mt-2 text-xs sm:text-sm uppercase tracking-[0.2em] text-muted-foreground">
+              <p
+                aria-hidden="true"
+                className="mt-2 text-xs sm:text-sm uppercase tracking-[0.2em] text-muted-foreground"
+              >
                 {s.label}
               </p>
             </Reveal>
@@ -167,9 +170,21 @@ function TrustBar() {
 
 function WhyChoose() {
   const cards = [
-    { icon: Crown, title: "Expert Bridal Makeup", desc: "Years of experience crafting timeless South Indian bridal looks." },
-    { icon: Sparkles, title: "HD & Airbrush", desc: "Camera-ready finish using professional HD and airbrush techniques." },
-    { icon: Heart, title: "Complete Package", desc: "Makeup, hair, draping & mehendi — one artist, total peace of mind." },
+    {
+      icon: Crown,
+      title: "Expert Bridal Makeup",
+      desc: "Years of experience crafting timeless South Indian bridal looks.",
+    },
+    {
+      icon: Sparkles,
+      title: "HD & Airbrush",
+      desc: "Camera-ready finish using professional HD and airbrush techniques.",
+    },
+    {
+      icon: Heart,
+      title: "Complete Package",
+      desc: "Makeup, hair, draping & mehendi — one artist, total peace of mind.",
+    },
   ];
   return (
     <section aria-labelledby="why-title" className="py-20 sm:py-28">
@@ -260,8 +275,14 @@ function TestimonialsCarousel() {
       onBlur={() => setPaused(false)}
       className="py-20 sm:py-28 relative overflow-hidden"
     >
-      <div aria-hidden="true" className="absolute -top-40 -left-40 h-80 w-80 rounded-full bg-gold/10 blur-3xl" />
-      <div aria-hidden="true" className="absolute -bottom-40 -right-40 h-80 w-80 rounded-full bg-burgundy/10 blur-3xl" />
+      <div
+        aria-hidden="true"
+        className="absolute -top-40 -left-40 h-80 w-80 rounded-full bg-gold/10 blur-3xl"
+      />
+      <div
+        aria-hidden="true"
+        className="absolute -bottom-40 -right-40 h-80 w-80 rounded-full bg-burgundy/10 blur-3xl"
+      />
 
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 relative">
         <SectionHeading
@@ -279,7 +300,10 @@ function TestimonialsCarousel() {
             aria-atomic="true"
             className="mt-12 rounded-3xl border border-gold/30 bg-card p-8 sm:p-12 shadow-luxe text-center"
           >
-            <div aria-label={`${t.rating} star rating`} className="flex justify-center gap-1 text-gold">
+            <div
+              aria-label={`${t.rating} star rating`}
+              className="flex justify-center gap-1 text-gold"
+            >
               {Array.from({ length: t.rating }).map((_, i) => (
                 <Star key={i} className="h-5 w-5 fill-current" aria-hidden="true" />
               ))}
@@ -334,7 +358,11 @@ function InstagramSection() {
   return (
     <section aria-labelledby="ig-title" className="bg-secondary/30 py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <SectionHeading eyebrow={`@${SITE.instagram}`} title="Follow our latest work on Instagram" titleId="ig-title" />
+        <SectionHeading
+          eyebrow={`@${SITE.instagram}`}
+          title="Follow our latest work on Instagram"
+          titleId="ig-title"
+        />
         <ul className="mt-14 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 list-none">
           {galleryImages.map((img, i) => (
             <li key={i}>
@@ -354,7 +382,10 @@ function InstagramSection() {
                   className="group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="pointer-events-none absolute inset-0 bg-burgundy-deep/0 group-hover:bg-burgundy-deep/60 flex items-center justify-center transition-colors">
-                  <Instagram className="h-6 w-6 text-ivory opacity-0 group-hover:opacity-100 transition-opacity" aria-hidden="true" />
+                  <Instagram
+                    className="h-6 w-6 text-ivory opacity-0 group-hover:opacity-100 transition-opacity"
+                    aria-hidden="true"
+                  />
                 </div>
               </a>
             </li>
@@ -380,12 +411,18 @@ function FinalCTA() {
                 backgroundSize: "60px 60px",
               }}
             />
-            <p className="relative text-xs uppercase tracking-[0.3em] text-gold-light mb-4">Limited Availability</p>
-            <h2 id="cta-title" className="relative font-display text-3xl sm:text-5xl text-ivory text-balance">
+            <p className="relative text-xs uppercase tracking-[0.3em] text-gold-light mb-4">
+              Limited Availability
+            </p>
+            <h2
+              id="cta-title"
+              className="relative font-display text-3xl sm:text-5xl text-ivory text-balance"
+            >
               Peak Bridal Dates Are Filling Fast
             </h2>
             <p className="relative mt-4 text-ivory/85 max-w-xl mx-auto font-serif-elegant text-lg">
-              Reserve your wedding date today and let's begin crafting the look you've always dreamed of.
+              Reserve your wedding date today and let's begin crafting the look you've always
+              dreamed of.
             </p>
             <a
               href={whatsappLink()}

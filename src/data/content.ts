@@ -49,13 +49,7 @@ export const packages = [
     price: "₹4,500",
     tag: "Starter",
     highlight: false,
-    features: [
-      "Soft glam makeup",
-      "Basic hairstyling",
-      "Saree draping",
-      "1 venue",
-      "Touch-up kit",
-    ],
+    features: ["Soft glam makeup", "Basic hairstyling", "Saree draping", "1 venue", "Touch-up kit"],
   },
   {
     name: "Classic Bridal",

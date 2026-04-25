@@ -33,7 +33,7 @@ export function buildMeta(input: SeoInput) {
     meta.push(
       { property: "og:image", content: image },
       { property: "og:image:alt", content: title },
-      { name: "twitter:image", content: image }
+      { name: "twitter:image", content: image },
     );
   }
   if (noindex) meta.push({ name: "robots", content: "noindex, nofollow" });

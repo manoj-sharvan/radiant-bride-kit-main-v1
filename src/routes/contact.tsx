@@ -88,13 +88,19 @@ function Contact() {
                     <c.icon className="h-6 w-6" />
                   </div>
                   <div className="flex-1">
-                    <h3 className={`font-display text-xl ${c.featured ? "text-ivory" : "text-burgundy"}`}>
+                    <h3
+                      className={`font-display text-xl ${c.featured ? "text-ivory" : "text-burgundy"}`}
+                    >
                       {c.title}
                     </h3>
-                    <p className={`mt-1 font-serif-elegant text-lg ${c.featured ? "text-ivory/90" : "text-charcoal"}`}>
+                    <p
+                      className={`mt-1 font-serif-elegant text-lg ${c.featured ? "text-ivory/90" : "text-charcoal"}`}
+                    >
                       {c.desc}
                     </p>
-                    <p className={`mt-4 text-xs uppercase tracking-[0.2em] font-semibold ${c.featured ? "text-gold-light" : "text-gold"}`}>
+                    <p
+                      className={`mt-4 text-xs uppercase tracking-[0.2em] font-semibold ${c.featured ? "text-gold-light" : "text-gold"}`}
+                    >
                       {c.cta} →
                     </p>
                   </div>
@@ -109,7 +115,9 @@ function Contact() {
             <div className="rounded-2xl border border-border bg-card p-6 text-center h-full">
               <MapPin className="mx-auto h-6 w-6 text-gold" />
               <h4 className="mt-3 font-display text-lg text-burgundy">Service Area</h4>
-              <p className="mt-2 text-sm text-muted-foreground">{SITE.location} & all of Tamil Nadu</p>
+              <p className="mt-2 text-sm text-muted-foreground">
+                {SITE.location} & all of Tamil Nadu
+              </p>
             </div>
           </Reveal>
           <Reveal delay={0.15}>
@@ -124,7 +132,9 @@ function Contact() {
         <Reveal>
           <div className="mt-16 rounded-3xl gradient-cta p-10 sm:p-14 text-center text-ivory shadow-luxe">
             <p className="text-xs uppercase tracking-[0.3em] text-gold-light">Quick booking</p>
-            <h2 className="mt-3 font-display text-3xl sm:text-4xl">Tap below for an instant chat</h2>
+            <h2 className="mt-3 font-display text-3xl sm:text-4xl">
+              Tap below for an instant chat
+            </h2>
             <p className="mt-3 font-serif-elegant text-ivory/85">
               Tell us your wedding date and venue — we'll reply with availability.
             </p>

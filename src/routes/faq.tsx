@@ -54,7 +54,11 @@ function FAQ() {
         />
 
         <Reveal>
-          <Accordion type="single" collapsible className="mt-12 rounded-2xl border border-border bg-card divide-y divide-border overflow-hidden">
+          <Accordion
+            type="single"
+            collapsible
+            className="mt-12 rounded-2xl border border-border bg-card divide-y divide-border overflow-hidden"
+          >
             {faqs.map((f, i) => (
               <AccordionItem key={i} value={`item-${i}`} className="border-0 px-6">
                 <AccordionTrigger className="font-display text-lg text-burgundy hover:no-underline py-6 text-left">
@@ -71,7 +75,9 @@ function FAQ() {
         <Reveal>
           <div className="mt-12 rounded-2xl gradient-cta p-8 text-center text-ivory shadow-luxe">
             <h3 className="font-display text-2xl">Still have questions?</h3>
-            <p className="mt-2 text-ivory/85 font-serif-elegant">We're here to help. Message us anytime.</p>
+            <p className="mt-2 text-ivory/85 font-serif-elegant">
+              We're here to help. Message us anytime.
+            </p>
             <a
               href={whatsappLink()}
               target="_blank"

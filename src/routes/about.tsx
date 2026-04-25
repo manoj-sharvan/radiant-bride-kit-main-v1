@@ -29,10 +29,26 @@ export const Route = createFileRoute("/about")({
 
 function About() {
   const values = [
-    { icon: Award, title: "Trained Professional", desc: "Certified in HD makeup, airbrush technique, and South Indian bridal styling." },
-    { icon: Heart, title: "Personal Attention", desc: "Every bride gets a dedicated trial and a one-on-one experience on the wedding day." },
-    { icon: Sparkles, title: "Premium Products", desc: "Only luxury international brands — MAC, Huda, Charlotte Tilbury, Bobbi Brown." },
-    { icon: Users, title: "100+ Happy Brides", desc: "Trusted by brides across Tiruvannamalai and Tamil Nadu since the very beginning." },
+    {
+      icon: Award,
+      title: "Trained Professional",
+      desc: "Certified in HD makeup, airbrush technique, and South Indian bridal styling.",
+    },
+    {
+      icon: Heart,
+      title: "Personal Attention",
+      desc: "Every bride gets a dedicated trial and a one-on-one experience on the wedding day.",
+    },
+    {
+      icon: Sparkles,
+      title: "Premium Products",
+      desc: "Only luxury international brands — MAC, Huda, Charlotte Tilbury, Bobbi Brown.",
+    },
+    {
+      icon: Users,
+      title: "100+ Happy Brides",
+      desc: "Trusted by brides across Tiruvannamalai and Tamil Nadu since the very beginning.",
+    },
   ];
 
   return (
@@ -54,19 +70,26 @@ function About() {
               </div>
             </Reveal>
             <Reveal delay={0.15}>
-              <p className="text-xs uppercase tracking-[0.3em] text-gold font-medium mb-3 ornament">Meet the artist</p>
+              <p className="text-xs uppercase tracking-[0.3em] text-gold font-medium mb-3 ornament">
+                Meet the artist
+              </p>
               <h1 className="font-display text-4xl sm:text-5xl text-burgundy text-balance">
                 Hi, I'm Divya — your bridal beauty companion
               </h1>
               <div className="mt-6 space-y-4 font-serif-elegant text-lg text-charcoal/80 leading-relaxed">
                 <p>
-                  Born and based in Tiruvannamalai, I've spent years honing my craft to bring out the most beautiful version of every bride who sits in my chair.
+                  Born and based in Tiruvannamalai, I've spent years honing my craft to bring out
+                  the most beautiful version of every bride who sits in my chair.
                 </p>
                 <p>
-                  My approach blends traditional South Indian bridal artistry with modern HD and airbrush techniques — so you look timeless in person and flawless in every photograph.
+                  My approach blends traditional South Indian bridal artistry with modern HD and
+                  airbrush techniques — so you look timeless in person and flawless in every
+                  photograph.
                 </p>
                 <p>
-                  Beyond makeup, I see myself as a calming presence on your big day. From the trial to the final touch-up before you walk down the aisle, I'm here so you can simply enjoy the moment.
+                  Beyond makeup, I see myself as a calming presence on your big day. From the trial
+                  to the final touch-up before you walk down the aisle, I'm here so you can simply
+                  enjoy the moment.
                 </p>
               </div>
               <div className="mt-8 flex flex-wrap gap-3">

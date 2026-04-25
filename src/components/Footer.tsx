@@ -22,11 +22,31 @@ export function Footer() {
           <div>
             <h4 className="font-display text-gold text-lg mb-4">Explore</h4>
             <ul className="space-y-2 text-sm text-ivory/80">
-              <li><Link to="/services" className="hover:text-gold transition-colors">Services</Link></li>
-              <li><Link to="/portfolio" className="hover:text-gold transition-colors">Portfolio</Link></li>
-              <li><Link to="/packages" className="hover:text-gold transition-colors">Packages</Link></li>
-              <li><Link to="/reviews" className="hover:text-gold transition-colors">Reviews</Link></li>
-              <li><Link to="/faq" className="hover:text-gold transition-colors">FAQ</Link></li>
+              <li>
+                <Link to="/services" className="hover:text-gold transition-colors">
+                  Services
+                </Link>
+              </li>
+              <li>
+                <Link to="/portfolio" className="hover:text-gold transition-colors">
+                  Portfolio
+                </Link>
+              </li>
+              <li>
+                <Link to="/packages" className="hover:text-gold transition-colors">
+                  Packages
+                </Link>
+              </li>
+              <li>
+                <Link to="/reviews" className="hover:text-gold transition-colors">
+                  Reviews
+                </Link>
+              </li>
+              <li>
+                <Link to="/faq" className="hover:text-gold transition-colors">
+                  FAQ
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -38,12 +58,18 @@ export function Footer() {
                 {SITE.location}
               </li>
               <li>
-                <a href={`tel:+91${SITE.phonePrimary}`} className="flex items-center gap-2 hover:text-gold">
+                <a
+                  href={`tel:+91${SITE.phonePrimary}`}
+                  className="flex items-center gap-2 hover:text-gold"
+                >
                   <Phone className="h-4 w-4 text-gold" /> +91 {SITE.phonePrimary}
                 </a>
               </li>
               <li>
-                <a href={`tel:+91${SITE.phoneSecondary}`} className="flex items-center gap-2 hover:text-gold">
+                <a
+                  href={`tel:+91${SITE.phoneSecondary}`}
+                  className="flex items-center gap-2 hover:text-gold"
+                >
                   <Phone className="h-4 w-4 text-gold" /> +91 {SITE.phoneSecondary}
                 </a>
               </li>
@@ -72,9 +98,7 @@ export function Footer() {
                 <MessageCircle className="h-5 w-5" />
               </a>
             </div>
-            <p className="mt-4 text-xs text-ivory/60">
-              @{SITE.instagram}
-            </p>
+            <p className="mt-4 text-xs text-ivory/60">@{SITE.instagram}</p>
           </div>
         </div>
 
